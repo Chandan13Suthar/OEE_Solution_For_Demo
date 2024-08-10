@@ -1,0 +1,909 @@
+Name: Loggers
+Type: LoggersCategoryFolder
+Children:
+- Name: OEERawDataLogger
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/OEE_Solution_For_Demo/DataStores/ODBCDatabase"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: SKU
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/SKU"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Operator
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/Operator"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: StandardSpeed
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/StandardSpeed"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ActualSpeed
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/ActualSpeed"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: ActualProduction
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/ActualProduction"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: Wastage
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/Wastage"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: TotalProduction
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/TotalProduction"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: RunTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/RunTime"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: DownTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/DownTime"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: SetupTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/SetupTime"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: IdleTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/IdleTime"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+    - Name: TotalTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../Model/ALL Tags/For Raw Data Dump/TotalTime"
+        Children:
+        - Name: Mode
+          Type: BaseVariableType
+          DataType: DynamicLinkMode
+          Value: 2
+  - Class: Reference
+    Target: ns=7;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+- Name: HourlyDemoOEELogger
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/OEE_Solution_For_Demo/DataStores/ODBCDatabase"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: SKU
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Operator
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: StandardSpeed
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: ActualSpeed
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: ActualProduction
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Wastage
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: TotalProduction
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: RunTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: DownTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: SetupTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: IdleTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: TotalTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: LocalDate
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+  - Class: Reference
+    Target: ns=7;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true
+- Name: DailyDemoOEELogger
+  Type: DataLogger
+  Children:
+  - Name: SamplingMode
+    Type: PropertyType
+    DataType: SamplingModeEnum
+    Value: 1
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/OEE_Solution_For_Demo/DataStores/ODBCDatabase"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: VariablesToLog
+    Type: BaseObjectType
+    Children:
+    - Name: SKU
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Operator
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: StandardSpeed
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: ActualSpeed
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: ActualProduction
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Wastage
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: TotalProduction
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: RunTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: DownTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: SetupTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: IdleTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: TotalTime
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: Month
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: MonthYear
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+    - Name: LocalDate
+      Type: VariableToLog
+      DataType: BaseDataType
+      Children:
+      - Name: LastValue
+        Type: PropertyType
+        DataType: BaseDataType
+        AccessLevel: Read
+      - Name: Timestamp
+        Type: PropertyType
+        DataType: UtcTime
+        AccessLevel: Read
+        Value: "1601-01-01T00:00:00.0000000"
+      - Name: LastOperationCode
+        Type: PropertyType
+        DataType: StatusCode
+        AccessLevel: Read
+        Value: 0
+  - Class: Reference
+    Target: ns=7;i=21
+    Direction: Forward
+  - Name: LogLocalTime
+    Type: PropertyType
+    DataType: Boolean
+    Value: true

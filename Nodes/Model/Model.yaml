@@ -1,0 +1,2518 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: ReportScrSelection
+  Id: g=f9d3951e1e6eeaec4ffc5798c5d851e8
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- File: Report/Report.yaml
+- File: Time/Time.yaml
+- File: RawTags/RawTags.yaml
+- File: DailyTags/DailyTags.yaml
+- File: HistoricalLog/HistoricalLog.yaml
+- File: PiChart/PiChart.yaml
+- File: OEE/OEE.yaml
+- File: SQLQuery/SQLQuery.yaml
+- Name: OEEcalculationSimulatorInstance
+  Type: OEEcalculationSimulator
+  Children:
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Performance"
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Availablity"
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Quality"
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: InRunning
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: OEEcalculationSimulatorLogic
+    Type: NetLogic
+  - Name: TargetProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurrentSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+  - Name: Totaltime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Total_Time"
+  - Name: Runtime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Run_Time"
+  - Name: AvgSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AvgSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/CalulateAvgSpeed1/AvgSpeed"
+- Name: OEEcalculationSimulator
+  Id: g=68698f7dda84e2c89999505f9b2f74ac
+  Supertype: BaseObjectType
+  Children:
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Performance"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Availablity"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Quality"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: InRunning
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: OEEcalculationSimulatorLogic
+    Type: NetLogic
+  - Name: TargetProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurrentSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Totaltime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Total_Time"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Runtime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Run_Time"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: AvgSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AvgSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/CalulateAvgSpeed1/AvgSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+- Name: OEEcalculationSimulator1
+  Type: OEEcalculationSimulator
+  Children:
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Performance"
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Availablity"
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 50.0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/OEE/Quality"
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: InRunning
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: OEEcalculationSimulatorLogic
+    Type: NetLogic
+  - Name: TargetProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurrentSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+  - Name: Totaltime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Total_Time"
+  - Name: Runtime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Run_Time"
+  - Name: AvgSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AvgSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/CalulateAvgSpeed1/AvgSpeed"
+- Name: Label
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "0"
+- Name: Label0
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- File: Downtime_Analysis1/Downtime_Analysis1.yaml
+- Name: DownAnalysisDataInstance
+  Type: DownAnalysisData
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 720
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/Diff"
+  - Name: IdelTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OccupiedTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Lunch
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PlannedRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabellingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalOperationalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownAnalysisDataLogic
+    Type: NetLogic
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/To"
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/From"
+- Name: DownAnalysisData
+  Id: g=0ff764dc5ebf50580bbb56829e15ba3b
+  Supertype: BaseObjectType
+  Children:
+  - Name: Running
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 720
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/Diff"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: IdelTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OccupiedTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Lunch
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PlannedRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabellingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalOperationalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownAnalysisDataLogic
+    Type: NetLogic
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/To"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/From"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+- Name: DownAnalysisData1
+  Type: DownAnalysisData
+  Children:
+  - Name: Running
+    Id: g=487ecc16dd286b4d435f00962481c991
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 720
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/Diff"
+  - Name: IdelTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OccupiedTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Lunch
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PlannedRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabellingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalOperationalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownAnalysisDataLogic
+    Type: NetLogic
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/To"
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/TimeDiffObject1/From"
+- File: CurrentDate/CurrentDate.yaml
+- Name: CalulateAvgSpeedInstance
+  Type: CalulateAvgSpeed
+  Children:
+  - Name: AvgSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CalculateAvgSpeedLogic
+    Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=c1bab800b20eaba184027a33f4cebb78
+      Direction: Forward
+    - Class: Reference
+      Target: g=e85c237cd53a118703effc55e3882107
+      Direction: Forward
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AvgStandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Runtime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Runtime"
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/GoodProduction"
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurrentSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+  - Name: CurrentSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/TotalTime"
+  - Name: TargetProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/IdleTime"
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TotalProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: CalulateAvgSpeed
+  Id: g=dffff62a0a3ba5e7be43508fbd22b595
+  Supertype: BaseObjectType
+  Children:
+  - Name: AvgSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CalculateAvgSpeedLogic
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: StartMethod
+      Id: g=c1bab800b20eaba184027a33f4cebb78
+    - Class: Method
+      Name: StopMethod
+      Id: g=e85c237cd53a118703effc55e3882107
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AvgStandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Runtime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Runtime"
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/GoodProduction"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurrentSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: CurrentSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/TotalTime"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: TargetProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/IdleTime"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TotalProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: CalulateAvgSpeed1
+  Type: CalulateAvgSpeed
+  Children:
+  - Name: AvgSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CalculateAvgSpeedLogic
+    Type: NetLogic
+    Children:
+    - Class: Reference
+      Target: g=c1bab800b20eaba184027a33f4cebb78
+      Direction: Forward
+    - Class: Reference
+      Target: g=e85c237cd53a118703effc55e3882107
+      Direction: Forward
+  - Name: Button
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: AvgStandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Runtime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Runtime"
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/GoodProduction"
+  - Name: Variable1
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: CurrentSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+  - Name: CurrentSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AverageSpeedProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/TotalTime"
+  - Name: TargetProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/IdleTime"
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TotalProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- File: Alarms/Alarms.yaml
+- Name: TimeDiffObjectInstance
+  Type: TimeDiffObject
+  Children:
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: UtcTime
+    Value: "2023-10-10T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: UtcTime
+    Value: "2023-10-10T00:00:00.0000000"
+  - Name: Diff
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TimeDiffObjectLogic
+    Type: NetLogic
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: TimeDiffObject
+  Id: g=e663c6ebbd9d763ea583a03365dbc72b
+  Supertype: BaseObjectType
+  Children:
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: UtcTime
+    Value: "2023-10-10T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: UtcTime
+    Value: "2023-10-10T00:00:00.0000000"
+  - Name: Diff
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TimeDiffObjectLogic
+    Type: NetLogic
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: TimeDiffObject1
+  Type: TimeDiffObject
+  Children:
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: UtcTime
+    Value: "2023-10-10T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: UtcTime
+    Value: "2023-10-10T00:00:00.0000000"
+  - Name: Diff
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TimeDiffObjectLogic
+    Type: NetLogic
+  - Name: GButton
+    Id: g=05ea388b671f694dc2c60156c2f9e87e
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: OpportunityLossDataInstance
+  Type: OpportunityLossData
+  Children:
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+  - Name: Diff
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StVsAc
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: OpportunityLossDataLogic
+    Type: NetLogic
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Price
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Name: StandardSpeedAvg
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeedAvg
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SpeedLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Conveyor
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: OpportunityLossData
+  Id: g=d58a8e4aad6901c80ee6eb2b2245607b
+  Supertype: BaseObjectType
+  Children:
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+  - Name: Diff
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StVsAc
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: OpportunityLossDataLogic
+    Type: NetLogic
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Price
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Name: StandardSpeedAvg
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeedAvg
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SpeedLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Conveyor
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: OpportunityLossData1
+  Type: OpportunityLossData
+  Children:
+  - Name: From
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+  - Name: To
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-10-01T00:00:00.0000000"
+  - Name: Diff
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: StVsAc
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: GButton
+    Id: g=a3c8627d78bc3a32ba083fbf7fd824dd
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: OpportunityLossDataLogic
+    Type: NetLogic
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Price
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 100
+  - Name: StandardSpeedAvg
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeedAvg
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SpeedLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Conveyor
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- File: Current_Date_folder/Current_Date_folder.yaml
+- Name: Average
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- File: Trend/Trend.yaml
+- Name: Datefirst
+  Type: BaseDataVariableType
+  DataType: DateString
+  Value: "Jan 1, 1601, 12:00:00 AM"
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../NetLogic/DateLogic/TomorrowDate"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Today
+  Type: BaseDataVariableType
+  DataType: UtcTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: Tomorrow
+  Type: BaseDataVariableType
+  DataType: UtcTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: Variable1
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-10-12T08:00:00.0000000"
+- Name: Variable2
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-10-13T08:00:00.0000000"
+- File: RealTimeTrend/RealTimeTrend.yaml
+- Name: Cost
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- File: eCharts/eCharts.yaml
+- File: echartTags/echartTags.yaml
+- Name: Locale
+  Id: g=193a30ac2d22d415e2630e6cac2caf4f
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- File: CostLossObject/CostLossObject.yaml
+- Name: DailyAlarmLogInstance
+  Type: DailyAlarmLog
+  Children:
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabellingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DailyAlarmLogLogic
+    Type: NetLogic
+  - Name: RunButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Idletime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Setuptime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Lunch
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: DailyAlarmLog
+  Id: g=9729f826dcfe3bd3b421cdac4df5b9e4
+  Supertype: BaseObjectType
+  Children:
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabellingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DailyAlarmLogLogic
+    Type: NetLogic
+  - Name: RunButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Idletime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Setuptime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Lunch
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: DailyAlarmLog1
+  Type: DailyAlarmLog
+  Children:
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabellingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DailyAlarmLogLogic
+    Type: NetLogic
+  - Name: RunButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Idletime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Setuptime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Lunch
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: KPICalculationInstance
+  Type: KPICalculation
+  Children:
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Stoppage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Wastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabelingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: KPICalculationLogic
+    Type: NetLogic
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: KPICalculation
+  Id: g=e318660a2c8a69e4d861ec9afde6d87c
+  Supertype: BaseObjectType
+  Children:
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Stoppage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Wastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabelingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: KPICalculationLogic
+    Type: NetLogic
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: KPICalculation1
+  Type: KPICalculation
+  Children:
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Stoppage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Wastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabelingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: KPICalculationLogic
+    Type: NetLogic
+  - Name: GButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: KPIDashboard1Instance
+  Type: KPIDashboard1
+  Children:
+  - Name: GBUTTON
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: FromDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-11-10T00:00:00.0000000"
+  - Name: ToDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-11-10T00:00:00.0000000"
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Stoppage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Wastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabelingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AvsS
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: DowntimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdletimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetuptimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LowspeedLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MTTR
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MTBF
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: KPIDashboardLogic
+    Type: NetLogic
+  - Name: StandardProductionK
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: KPIDashboard1
+  Id: g=f76c0f439925d664b2161bd30986d516
+  Supertype: BaseObjectType
+  Children:
+  - Name: GBUTTON
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: FromDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-11-10T00:00:00.0000000"
+  - Name: ToDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-11-10T00:00:00.0000000"
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Stoppage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Wastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabelingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AvsS
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: DowntimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdletimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetuptimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LowspeedLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MTTR
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MTBF
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: KPIDashboardLogic
+    Type: NetLogic
+  - Name: StandardProductionK
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: KPIDashboard2
+  Type: KPIDashboard1
+  Children:
+  - Name: GBUTTON
+    Id: g=b830f1658aafb9a0d889139dc03a6092
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: FromDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-11-10T00:00:00.0000000"
+  - Name: ToDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-11-10T00:00:00.0000000"
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Stoppage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Wastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: StandardSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ActualSpeed
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RunTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DownTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: ConveyorBelt
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DriveOverload
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LabelingIssue
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RawMaterial
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: PaperZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MotorZam
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 50
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 70
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 60
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 55
+  - Name: IdleTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetupTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: AvsS
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: DowntimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: IdletimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: SetuptimeLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: LowspeedLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalLoss
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MTTR
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: MTBF
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: KPIDashboardLogic
+    Type: NetLogic
+  - Name: StandardProductionK
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 100.0
+  - Name: TotalTime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- File: KPI_Downtime/KPI_Downtime.yaml
+- Name: DetailedReportSummaryInstance
+  Type: DetailedReportSummary
+  Children:
+  - Name: TotalProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalDowntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalIdletime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalSetuptime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalWastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DetailedReportSummaryLogic
+    Type: NetLogic
+  - Name: FromDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/Report/RepFromTimestamp"
+  - Name: ToDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/Report/RepToTimestamp"
+  - Name: RButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: DetailedReportSummary
+  Id: g=6b32968915163460cf136514719f7903
+  Supertype: BaseObjectType
+  Children:
+  - Name: TotalProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalDowntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalIdletime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalSetuptime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalWastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DetailedReportSummaryLogic
+    Type: NetLogic
+  - Name: FromDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/Report/RepFromTimestamp"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: ToDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/Report/RepToTimestamp"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2
+  - Name: RButton
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: DetailedReportSummary1
+  Type: DetailedReportSummary
+  Children:
+  - Name: TotalProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalRuntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalDowntime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalIdletime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalSetuptime
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: TotalWastage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Performance
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Availability
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Quality
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: OEE
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: DetailedReportSummaryLogic
+    Type: NetLogic
+  - Name: FromDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/Report/RepFromTimestamp"
+  - Name: ToDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "/Objects/OEE_Solution_For_Demo/Model/Report/RepToTimestamp"
+  - Name: RButton
+    Id: g=1d9dd9a46c74577046a838643c3f3ac0
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- File: DateTime/DateTime.yaml
+- File: DowntimeAlarms/DowntimeAlarms.yaml
+- File: PiChartPerformance/PiChartPerformance.yaml
+- File: ChartPerformance/ChartPerformance.yaml
+- File: PiChartAvailability/PiChartAvailability.yaml
+- File: ChartAvailability/ChartAvailability.yaml
+- File: PiChartQuality/PiChartQuality.yaml
+- File: ChartQuality/ChartQuality.yaml
+- File: Retain_Variable/Retain_Variable.yaml
+- File: DowntimeLog/DowntimeLog.yaml
+- File: ALL_Tags/ALL_Tags.yaml

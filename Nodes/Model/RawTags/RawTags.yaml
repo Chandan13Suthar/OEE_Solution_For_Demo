@@ -1,0 +1,323 @@
+Name: RawTags
+Type: FolderType
+Children:
+- Name: ActivePowerTotal
+  Type: NodePointer
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Active Power Total"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ApparentPowerTotal
+  Type: NodePointer
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: Kind
+    Type: PropertyType
+    DataType: NodeId
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Apparent Power Total"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ReactivePowerTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Reactive Power Total"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: ActiveEnergyTotal
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Active Enegy Total"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Apparent Energy Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Apparent Enegy Total"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Reactive Energy Total
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Reactive Enegry Total"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg PF
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Avg PF"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 1 Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 1 Current"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 2 Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 2 Current"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 3 Current
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 3 Current"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: 'Avg Current	'
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Avg Current"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg Voltage (VLL)
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Avg Voltage(VLL)@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Avg Voltage (VLN)
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Avg Voltage(VLN)@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Frequency
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/ Frequncy@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 1 Voltage LL
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 1 Voltage LL"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 2 Voltage LL
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 2 Voltage LL"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 3 Voltage LL
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 3 Voltage LL"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 1 Voltage LN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 1 Voltage LN"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 2 Voltage LN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 2 Voltage LN@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase23VoltageLN1
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/ModbusDriver1/ModbusStation1/Tags/Folder1/Phase 3 Voltage LN@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Phase 3 Voltage LN
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 230.0
+- Name: Phase3VoltageLN1
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 56.0
+- Name: Phase3VoltageLN2
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 457.5
+- Name: Phase3VoltageLN3
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 457.5
+- Name: Phase3VoltageLN4
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 457.5
+- Name: Phase3VoltageLN5
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 47.5
+- Name: Phase3VoltageLN6
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 125.0
+- Name: Phase3VoltageLN7
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 87.5

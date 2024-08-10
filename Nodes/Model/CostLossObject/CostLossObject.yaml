@@ -1,0 +1,47 @@
+Name: CostLossObject
+Id: g=0dcbf15af775cb0eb36241d0e8c0ab32
+Type: FolderType
+Children:
+- Name: SpeedLoss
+  Id: g=4ba4a40de7bd9438b1eb3cae25ad6016
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../OpportunityLossData1/SpeedLoss"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: DowntimeLoss
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../OpportunityLossData1/DownTimeLoss"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: IdletimeLoss
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../OpportunityLossData1/IdleTimeLoss"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

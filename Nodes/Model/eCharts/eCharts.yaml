@@ -1,0 +1,81 @@
+Name: eCharts
+Type: FolderType
+Children:
+- Name: eChart1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../KPIDashboard2/StandardProductionK"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: eChart2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 876
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../KPIDashboard2/Performance"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: eChart3
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 789
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../KPIDashboard2/Availability"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: eChart4
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 423
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../KPIDashboard2/Quality"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: eChart5
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 412
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../KPIDashboard2/OEE"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: eChart6
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: eChart7
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

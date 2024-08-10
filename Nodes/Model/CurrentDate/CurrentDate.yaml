@@ -1,0 +1,29 @@
+Name: CurrentDate
+Type: FolderType
+Children:
+- Name: StartTime
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-10-03T09:00:00.0000000"
+- Name: EndTime
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-10-03T20:00:00.0000000"
+- Name: TodayStart
+  Type: BaseDataVariableType
+  DataType: UtcTime
+  Value: "1601-01-01T00:00:00.0000000"
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../NetLogic/CurrentDateTimeFormatted/Time"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: TodayEnd
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

@@ -1,0 +1,39 @@
+Name: Time
+Type: FolderType
+Children:
+- Name: Downtime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 390
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Runtime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1050
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Run_Time"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Ideltime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 950
+- Name: Setuptime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 40

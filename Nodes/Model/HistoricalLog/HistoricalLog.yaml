@@ -1,0 +1,83 @@
+Name: HistoricalLog
+Type: FolderType
+Children:
+- Name: |
+      P1 VLL
+
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../RawTags/Phase 1 Voltage LL@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |
+      P1 VLN
+
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../RawTags/Phase 1 Voltage LN"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |
+      P2 VLL
+
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../RawTags/Phase 2 Voltage LL"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |
+      P2 VLN
+
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../RawTags/Phase 2 Voltage LN"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |
+      P3 VLL
+
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../RawTags/Phase 3 Voltage LL"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

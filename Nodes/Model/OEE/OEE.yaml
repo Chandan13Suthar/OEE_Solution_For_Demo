@@ -1,0 +1,217 @@
+Name: OEE
+Type: FolderType
+Children:
+- Name: Total Count
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 24588
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Total_Count"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Good Count
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 22572
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Good_Count"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Wastage
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 2016
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Wastage"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Machine Speed
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Idel Cycle Time
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 200
+- Name: Actual Cycle Time
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Product Order Number
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "W_88"
+- Name: 'Total Time '
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1440
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Total_Time"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Downtime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 150
+- Name: Runtime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 1050
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Run_Time"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Availablity
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 84.56999969482422
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Availability"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Performance
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 81.25
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Performance"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Quality
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 91.25
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Quality"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OEE
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 79.58000183105469
+- Name: No. Of Stoppdage
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 12
+- Name: MTBF
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "5.6"
+- Name: MTTR
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.23999999463558197
+- Name: TargetProduction
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../OEEcalculationSimulator1/TargetProduction"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: CurrentSpeedProduction
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../OEEcalculationSimulator1/CurrentSpeedProduction"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: AvgSpeed
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../CalulateAvgSpeed1/AvgSpeed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: AvgSpeedProduction
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../OEEcalculationSimulator1/AvgSpeedProduction"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

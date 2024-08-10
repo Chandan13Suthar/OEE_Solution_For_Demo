@@ -1,0 +1,68 @@
+Name: SQLQuery
+Type: FolderType
+Children:
+- Name: QueryFromDateTime
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T00:00:00.0000000"
+- Name: QueryToDateTime
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-03-07T22:00:00.0000000"
+- Name: AuditColumn
+  Type: BaseObjectType
+  Children:
+  - Name: ClientUserId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: SecondClientUserId
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: SourceName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: CompOpterator
+  Type: BaseObjectType
+  Children:
+  - Name: LIKE
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: =
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: QueryColumText
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "opt1"
+- Name: QueryfromValue
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: QuerytoValue
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+- Name: DataLogVars
+  Type: BaseObjectType
+  Children:
+  - Name: BatchName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Speed
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+  - Name: Humidity
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "0"
+- Name: QueryValue
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "Batch_101"

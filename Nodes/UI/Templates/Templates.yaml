@@ -1,0 +1,231 @@
+Name: Templates
+Type: FolderType
+Children:
+- Name: SubscreenTemplate
+  Id: g=deaa01c3e53bfe985adf612753357ac8
+  Supertype: Panel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1366.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 640.0
+  - Name: Main
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#3f70a2"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+  - Name: Background
+    Type: Rectangle
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 50.0
+    - Name: BorderThickness
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 0.0
+    - Name: FillColor
+      Type: BaseDataVariableType
+      DataType: Color
+      ModellingRule: Optional
+      Value: "#f5f5f5"
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: LeftMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: TopMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: RightMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: BottomMargin
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 10.0
+    - Name: CornerRadius
+      Type: BaseDataVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 14.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+- Name: SubscreenNavigationPanel1
+  Id: g=e6db0732f7f5fdd5c9201393a64809bf
+  Supertype: NavigationPanel
+  ReferenceType: HasComponent
+  Children:
+  - Name: Panels
+    Type: BaseObjectType
+    Children:
+    - Name: Panel1
+      Type: NavigationPanelItem
+      Children:
+      - Name: Title
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+      - Name: Panel
+        Type: NodePointer
+        DataType: NodeId
+        Value: {"IdType":0,"Id":0,"Namespace":-1}
+        Children:
+        - Name: Kind
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item/Container"
+  - Name: CurrentPanel
+    Type: NodePointer
+    DataType: NodeId
+    AccessLevel: Read
+    Value: {"IdType":0,"Id":0,"Namespace":-1}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/BaseUIObject/Item"
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1366.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 688.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: CurrentTabIndex
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Class: Reference
+    Target: ns=5;i=1181
+    Direction: Forward
+  - Class: Reference
+    Target: ns=5;i=1183
+    Direction: Forward
+- Name: RemotePDFViewer
+  Id: g=36e8a606d582eeb232aa863eb3328b4a
+  Supertype: PdfViewer
+  ReferenceType: HasComponent
+  Children:
+  - Name: Path
+    Type: BaseDataVariableType
+    DataType: ResourceUri
+    Value: ""
+  - Name: CurrentPage
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 400.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 300.0
+  - Name: RuntimeNetLogic1
+    Type: NetLogic
+    Children:
+    - Class: Method
+      Name: LoadPdf
+      Id: g=72bb50cf83d3ccd4ec968b404a1fc76c
+  - Name: PdfServerPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: ""
+  - Name: IsNativeUI
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "{Session}/IsNative"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        ModellingRule: Optional
+        Value: 2

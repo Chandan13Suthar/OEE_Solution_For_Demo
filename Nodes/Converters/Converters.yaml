@@ -1,0 +1,125 @@
+Name: Converters
+Type: ConvertersCategoryFolder
+Children:
+- Name: ButtonSelection1
+  Id: g=35bb30060de4dcc086df5f1b375aae5a
+  Supertype: ConditionalConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Condition
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasSource
+    Value: false
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Value: false
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} == (0)"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/OEE_Solution_For_Demo/Model/ReportScrSelection"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: true
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: false
+  - Name: TrueValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    Value: "#0fafff"
+  - Name: FalseValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "#f3f3f3"
+- Name: ButtonSelection2
+  Id: g=0a291c81f5ca7f0d776375cd17581cd5
+  Supertype: ConditionalConverter
+  ReferenceType: HasComponent
+  Children:
+  - Name: Condition
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ReferenceType: HasSource
+    Value: false
+    Children:
+    - Name: ConditionalConverter1
+      Type: ConditionalConverter
+      Children:
+      - Name: Condition
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasSource
+        Value: false
+        Children:
+        - Name: ExpressionEvaluator1
+          Type: ExpressionEvaluator
+          Children:
+          - Name: Expression
+            Type: BaseDataVariableType
+            DataType: String
+            ReferenceType: HasParameter
+            ModellingRule: Optional
+            Value: "{0} == (1)"
+          - Name: ns=3;Source0
+            Type: BaseDataVariableType
+            DataType: BaseDataType
+            ReferenceType: HasSource
+            Children:
+            - Name: DynamicLink
+              Type: DynamicLink
+              DataType: NodePath
+              Value: "/Objects/OEE_Solution_For_Demo/Model/ReportScrSelection"
+      - Name: TrueValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: true
+      - Name: FalseValue
+        Type: BaseDataVariableType
+        DataType: Boolean
+        ReferenceType: HasParameter
+        ModellingRule: Optional
+        Value: false
+  - Name: TrueValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    Value: "#0fafff"
+  - Name: FalseValue
+    Type: BaseDataVariableType
+    DataType: Color
+    ReferenceType: HasParameter
+    ModellingRule: Optional
+    Value: "#f3f3f3"

@@ -1,0 +1,32 @@
+Name: PiChartAvailability
+Id: g=01ad6cba63653a6d1f68a8b5a17e34fb
+Type: FolderType
+Children:
+- Name: Runtime
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Runtime"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Downtime
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

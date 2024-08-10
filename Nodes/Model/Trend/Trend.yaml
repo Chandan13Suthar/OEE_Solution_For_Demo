@@ -1,0 +1,27 @@
+Name: Trend
+Type: FolderType
+Children:
+- Name: PerformanceTrendSelect
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: AvailiabilityTrendSelect
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: QualityTrendSelect
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: OEETrendSelect
+  Type: BaseDataVariableType
+  DataType: Boolean
+  Value: true
+- Name: TimeAxis
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-02-03T10:00:00.0000000"
+- Name: TimeAxisDuration
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:30.0000000"

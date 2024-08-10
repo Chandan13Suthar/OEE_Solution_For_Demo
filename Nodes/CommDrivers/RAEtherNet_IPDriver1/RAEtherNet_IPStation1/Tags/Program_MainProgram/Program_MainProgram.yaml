@@ -1,0 +1,147 @@
+Name: 'Program:MainProgram'
+Type: FolderType
+Children:
+- Name: SKU
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.SKU"
+- Name: Operator
+  Type: RAEtherNetIPTag
+  DataType: String
+  Value: ""
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Operator"
+- Name: Input_St_Speed
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Input_St_Speed"
+- Name: Standard_Speed
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Standard_Speed"
+- Name: Actual_Speed
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Actual_Speed"
+- Name: TotalProduction
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.TotalProduction"
+- Name: GoodProduction
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.GoodProduction"
+- Name: Wastage
+  Type: RAEtherNetIPTag
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Wastage"
+- Name: Runtime
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Runtime"
+- Name: Downtime
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Downtime"
+- Name: Setuptime
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Setuptime"
+- Name: ActulSpeed1
+  Type: RAEtherNetIPTag
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.ActulSpeed1"
+- Name: TotalTime
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.TotalTime"
+- Name: MachineStatus
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.MachineStatus"
+- Name: Start
+  Type: RAEtherNetIPTag
+  DataType: Boolean
+  Value: false
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.Start"
+- Name: IdleTime
+  Type: RAEtherNetIPTag
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: SymbolName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Program:MainProgram.IdleTime"

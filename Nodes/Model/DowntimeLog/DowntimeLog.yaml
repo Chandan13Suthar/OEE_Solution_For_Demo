@@ -1,0 +1,234 @@
+Name: DowntimeLog
+Id: g=ffea88bd01c52194663f5800db299eaf
+Type: FolderType
+Children:
+- Name: |-
+      Conveyor belt 
+      miss-alignment
+  Id: g=9c11cde81a0ef22ad8c6003b051ea025
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 52.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 15 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: |-
+      Drive 
+      overlaod
+      issue
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 84.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 20 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: |-
+      Labeling 
+      issue
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 79.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 10 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: |-
+      Raw material 
+      shortage
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 99.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 5 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: Paper Zam
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 25.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 3 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: Motor Zam
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 20.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 12 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: IdleTime
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 9 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: MainPowerFailure
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 17 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: LowOil
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 2 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+- Name: TemperatureHigh
+  Type: BaseDataVariableType
+  DataType: Float
+  Value: 0.0
+  Children:
+  - Name: ExpressionEvaluator1
+    Type: ExpressionEvaluator
+    Children:
+    - Name: Expression
+      Type: BaseDataVariableType
+      DataType: String
+      ReferenceType: HasParameter
+      Value: "( {0} * 7 ) / 100 "
+    - Name: ns=3;Source0
+      Type: BaseDataVariableType
+      DataType: BaseDataType
+      ReferenceType: HasSource
+      Children:
+      - Name: DynamicLink
+        Type: DynamicLink
+        DataType: NodePath
+        Value: "../../../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"

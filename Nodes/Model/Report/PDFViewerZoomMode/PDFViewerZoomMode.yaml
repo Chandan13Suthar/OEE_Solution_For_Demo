@@ -1,0 +1,24 @@
+Name: PDFViewerZoomMode
+Type: FolderType
+Children:
+- Name: Custom level
+  Id: g=2e17b7a708c6d402b0013784c24c3d97
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"LocaleId":"en-US","Text":"Custom level"}
+- Name: Fit width
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"LocaleId":"en-US","Text":"Fit width"}
+- Name: Actual size
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"NamespaceIndex":30,"TextId":"Actual size"}
+- Name: Fit page
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"LocaleId":"en-US","Text":"Fit page"}
+- Name: Fit height
+  Type: BaseDataVariableType
+  DataType: LocalizedText
+  Value: {"LocaleId":"en-US","Text":"Fit height"}

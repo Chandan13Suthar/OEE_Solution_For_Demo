@@ -1,0 +1,20 @@
+Name: RealTimeTrend
+Type: FolderType
+Children:
+- Name: TimeAxis
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "2023-02-03T10:00:00.0000000"
+- Name: TimeAxisDuration
+  Id: g=84f75ad9953e98a32b156aec351cddf9
+  Type: BaseDataVariableType
+  DataType: Duration
+  Value: "0:00:00:30.0000000"
+- Name: YAxisUpper
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
+- Name: YAxisLower
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

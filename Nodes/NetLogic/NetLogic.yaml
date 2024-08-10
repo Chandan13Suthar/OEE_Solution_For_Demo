@@ -1,0 +1,271 @@
+Name: NetLogic
+Type: NetLogicCategoryFolder
+Children:
+- Name: PrintPdfFile
+  Id: g=b162aeefb11925b2afe50b769592f3be
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: FoxitReaderPath
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "C:\\Program Files (x86)\\Foxit Software\\Foxit PDF Reader\\FoxitPDFReader.exe"
+  - Class: Method
+    Name: PrintPdf
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"pdfFile","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: ReadDataFromEmbDatabase
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: ReadData
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"SetSQLQuery","DataType":{"Id":12},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: AddMinutesToCurrentTime
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: AddMinutesToTime
+- Name: CompareDateTime
+  Type: NetLogic
+  Children:
+  - Class: Method
+    Name: CompareTime
+    Children:
+    - Name: ns=0;InputArguments
+      Type: BaseVariableType
+      DataType: Argument
+      ReferenceType: HasProperty
+      ValueRank: OneDimension
+      ArrayDimensions: [0]
+      Value: [{"TypeId":{"Id":296},"Body":{"Name":"labelNodeId","DataType":{"Id":17},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"dt1","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}},{"TypeId":{"Id":296},"Body":{"Name":"dt2","DataType":{"Id":13},"ValueRank":-1,"ArrayDimensions":[],"Description":{"NamespaceIndex":-1,"LocaleId":"","Text":""}}}]
+- Name: DataLogTableExport
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///Z:/01_Projects/FTOptix/FTOptix_Demo/ProjectFiles/CSV_Exported/DataLogExported.CSV"
+  - Name: FieldDelimiter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Name: Table
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"8a893fd9526d1fa2eca928f9541beda0","Namespace":30}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
+  - Name: Query
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SELECT * FROM"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"SELECT * FROM {0:sql_identifier} WHERE LocalTimestamp BETWEEN {1:sql_literal} AND {2:sql_literal}"}
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Table@BrowseName"
+      - Name: ns=3;Source1
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVFromTimeStamp"
+      - Name: ns=3;Source2
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../../../Model/CSVToTimeStamp"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Class: Method
+    Name: Export
+- Name: ClockLogic
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TimeOld
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TimeNew
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+- Name: DateLogic
+  Type: NetLogic
+  Children:
+  - Name: Date
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: ""
+  - Name: TomorrowDate
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: ""
+  - Name: startDate
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: endDate
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ""
+  - Name: yesterdayDate
+    Type: BaseDataVariableType
+    DataType: DateString
+    Value: ""
+- Name: NewLogic
+  Type: NetLogic
+  Children:
+  - Name: TodayDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: TomorrowDate
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+- Name: StVsAcLogic
+  Type: NetLogic
+  Children:
+  - Name: ActualProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/OpportunityLossData1/ActualSpeed"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: StandardProduction
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+    Children:
+    - Name: DynamicLink
+      Type: DynamicLink
+      DataType: NodePath
+      Value: "../../../Model/OpportunityLossData1/StandardProduction"
+      Children:
+      - Name: Mode
+        Type: BaseVariableType
+        DataType: DynamicLinkMode
+        Value: 2
+  - Name: StVsAc
+    Type: BaseDataVariableType
+    DataType: Float
+    Value: 0.0
+  - Name: Buttong
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+- Name: GenericTableExporter
+  Id: g=a17bf316608e6ce4a63de8497acba1e6
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: CSVPath
+    Type: BaseDataVariableType
+    DataType: AbsoluteResourceUri
+    Value: "file:///D:/Jatin Bhai/Report.csv"
+  - Name: FieldDelimiter
+    Type: BaseDataVariableType
+    DataType: String
+    Value: ","
+  - Class: Method
+    Name: Export
+  - Name: Table
+    Type: NodePointer
+    DataType: NodeId
+    Value: {"IdType":2,"Id":"7d6dcab41c4c48d34e3c2bc490a70c8b","Namespace":30}
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Table"
+  - Name: Query
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "SELECT * FROM"
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"LocaleId":"en-US","Text":"SELECT * FROM {0:sql_identifier} WHERE LocalTimestamp BETWEEN '2023-10-24 09:00:00' AND '2023-10-25 20:00:00' AND DATEDiff(SECOND, '2023-10-24 09:00:00',LocalTimestamp) %600 = 0"}
+      - Name: Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../Table@BrowseName"
+  - Name: WrapFields
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+- Name: CurrentDateTimeFormatted
+  Type: NetLogic
+  WriteMask: BrowseName|DataType|Description|DisplayName|MinimumSamplingInterval|UserAccessLevel
+  Children:
+  - Name: Time
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"
+  - Name: UTCTime
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "1601-01-01T00:00:00.0000000"

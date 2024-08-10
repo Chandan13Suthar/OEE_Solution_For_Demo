@@ -1,0 +1,1213 @@
+Name: Machine Selection
+Type: FolderType
+Children:
+- Name: Machine_Selection1
+  Id: g=bc883eab45c97fc35bbb23ac5d6f71ad
+  Supertype: Panel
+  DisplayName: {"NamespaceIndex":30,"TextId":"Machine Selection"}
+  ReferenceType: HasComponent
+  Children:
+  - Name: Width
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1920.0
+  - Name: Height
+    Type: BaseVariableType
+    DataType: Size
+    ModellingRule: Optional
+    Value: 1000.0
+  - Name: HorizontalAlignment
+    Type: BaseVariableType
+    DataType: HorizontalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: VerticalAlignment
+    Type: BaseVariableType
+    DataType: VerticalAlignment
+    ModellingRule: Optional
+    Value: 3
+  - Name: SubscreenTemplate1
+    Type: SubscreenTemplate
+    Children:
+    - Name: Main
+      Type: Rectangle
+    - Name: Background
+      Type: Rectangle
+      Children:
+      - Name: VerticalLayout1
+        Type: ColumnLayout
+        Children:
+        - Name: Width
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: Height
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 50.0
+        - Name: HorizontalAlignment
+          Type: BaseVariableType
+          DataType: HorizontalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: VerticalAlignment
+          Type: BaseVariableType
+          DataType: VerticalAlignment
+          ModellingRule: Optional
+          Value: 3
+        - Name: LeftMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: TopMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: RightMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: BottomMargin
+          Type: BaseVariableType
+          DataType: Size
+          ModellingRule: Optional
+          Value: 10.0
+        - Name: HorizontalLayout1
+          Type: RowLayout
+          Children:
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 50.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 250.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: VerticalAlignment
+            Type: BaseVariableType
+            DataType: VerticalAlignment
+            Value: 0
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 30.0
+          - Name: Rectangle1
+            Type: Rectangle
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 610.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 250.0
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 1.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+            - Name: Button1
+              Type: Button
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Machine-1"}
+              - Name: ImagePath
+                Type: BaseDataVariableType
+                DataType: ResourceUri
+                ModellingRule: Optional
+                Value: "ns=30;%PROJECTDIR%/machine vijuk.png"
+              - Name: ImagePosition
+                Type: BaseDataVariableType
+                DataType: Position
+                ModellingRule: Optional
+                Value: 1
+              - Name: TextPosition
+                Type: BaseDataVariableType
+                DataType: Position
+                ModellingRule: Optional
+                Value: 7
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 0
+              - Name: BackgroundColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer4
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ns=3;ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{PanelLoader1}@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: ns=3;Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "ChangePanel"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: NewPanel
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/OEE_Solution_For_Demo/UI/Screen/RealtimePanel/Screen1"
+                      - Name: AliasNode
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                        ValueRank: ScalarOrOneDimension
+                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                    Value: ""
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                    Value: ""
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+                    Value: 0
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 300.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 250.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: Enabled
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -1.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#000000"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Actual _Production"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 310.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label2
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: StringFormatter1
+                  Type: StringFormatter
+                  Children:
+                  - Name: Format
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: {"LocaleId":"","Text":"{0:d}"}
+                  - Name: ns=3;Source0
+                    Type: BaseDataVariableType
+                    DataType: BaseDataType
+                    ReferenceType: HasSource
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/GoodProduction"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 496.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 22.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: Label3
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Wastage"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 340.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 80.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label4
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Wastage"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 494.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 80.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: Label5
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Machine Status"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 340.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 184.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label6
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Value: false
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/MachineStatus"
+                  - Name: TrueValue
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: {"NamespaceIndex":30,"TextId":"Running"}
+                  - Name: FalseValue
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: {"NamespaceIndex":30,"TextId":"StandBy"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 494.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 184.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: Label7
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Downtime(Min.)"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 339.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 126.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label8
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 493.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 126.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 1.0
+          - Name: Rectangle2
+            Type: Rectangle
+            Children:
+            - Name: Width
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 620.0
+            - Name: Height
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 250.0
+            - Name: BorderThickness
+              Type: BaseDataVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 1.0
+            - Name: LeftMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 10.0
+            - Name: Button1
+              Type: Button
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"LocaleId":"en-US","Text":"Machine-2"}
+              - Name: ImagePath
+                Type: BaseDataVariableType
+                DataType: ResourceUri
+                ModellingRule: Optional
+                Value: "ns=30;%PROJECTDIR%/machine vijuk.png"
+              - Name: ImagePosition
+                Type: BaseDataVariableType
+                DataType: Position
+                ModellingRule: Optional
+                Value: 1
+              - Name: TextPosition
+                Type: BaseDataVariableType
+                DataType: Position
+                ModellingRule: Optional
+                Value: 7
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: HorizontalAlignment
+                Type: BaseVariableType
+                DataType: HorizontalAlignment
+                ModellingRule: Optional
+                Value: 0
+              - Name: VerticalAlignment
+                Type: BaseVariableType
+                DataType: VerticalAlignment
+                ModellingRule: Optional
+                Value: 0
+              - Name: BackgroundColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#ffffff"
+              - Name: MouseClickEventHandler1
+                Type: EventHandler
+                Children:
+                - Name: ListenEventType
+                  Type: PropertyType
+                  DataType: NodeId
+                  Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+                - Name: MethodsToCall
+                  Type: BaseObjectType
+                  Children:
+                  - Name: MethodContainer4
+                    Type: BaseObjectType
+                    Children:
+                    - Name: ns=3;ObjectPointer
+                      Type: NodePointer
+                      DataType: NodeId
+                      Value: {"IdType":0,"Id":0,"Namespace":-1}
+                      Children:
+                      - Name: Kind
+                        Type: PropertyType
+                        DataType: NodeId
+                        Value: "/Types/ObjectTypes/BaseObjectType"
+                      - Name: DynamicLink
+                        Type: DynamicLink
+                        DataType: NodePath
+                        Value: "{PanelLoader2}@NodeId"
+                        Children:
+                        - Name: Mode
+                          Type: BaseVariableType
+                          DataType: DynamicLinkMode
+                          ModellingRule: Optional
+                          Value: 2
+                    - Name: ns=3;Method
+                      Type: BaseDataVariableType
+                      DataType: String
+                      Value: "ChangePanel"
+                    - Name: InputArguments
+                      Type: BaseObjectType
+                      Children:
+                      - Name: NewPanel
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                        Value: "/Objects/OEE_Solution_For_Demo/UI/Screen/RealtimePanel/Screen1"
+                      - Name: AliasNode
+                        Type: BaseDataVariableType
+                        DataType: NodeId
+                        Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                        ValueRank: ScalarOrOneDimension
+                        Value: {"IdType":0,"Id":0,"Namespace":-1}
+                - Name: EventArguments
+                  Type: MouseClickEvent
+                  Children:
+                  - Name: EventId
+                    Type: PropertyType
+                    DataType: ByteString
+                    Value: ""
+                  - Name: EventType
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceNode
+                    Type: PropertyType
+                    DataType: NodeId
+                    Value: {"IdType":0,"Id":0,"Namespace":-1}
+                  - Name: SourceName
+                    Type: PropertyType
+                    DataType: String
+                    Value: ""
+                  - Name: Time
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: ReceiveTime
+                    Type: PropertyType
+                    DataType: UtcTime
+                    Value: "1601-01-01T00:00:00.0000000"
+                  - Name: Message
+                    Type: PropertyType
+                    DataType: LocalizedText
+                    Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                  - Name: Severity
+                    Type: PropertyType
+                    DataType: UInt16
+                    Value: 0
+              - Name: Width
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 300.0
+              - Name: Height
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 250.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: Visible
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: Enabled
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: -1.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 0.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#000000"
+            - Name: Label1
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Actual _Production"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 310.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 15.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label2
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Good_Count"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 496.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 22.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: Label3
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Wastage"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 340.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 80.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label4
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Wastage"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 494.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 80.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: Label5
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Machine Status"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 340.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 184.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label6
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: ConditionalConverter1
+                  Type: ConditionalConverter
+                  Children:
+                  - Name: Condition
+                    Type: BaseDataVariableType
+                    DataType: Boolean
+                    ReferenceType: HasSource
+                    Value: false
+                    Children:
+                    - Name: DynamicLink
+                      Type: DynamicLink
+                      DataType: NodePath
+                      Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Controller Tags/Machine_Status"
+                  - Name: TrueValue
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: {"NamespaceIndex":30,"TextId":"Running"}
+                  - Name: FalseValue
+                    Type: BaseDataVariableType
+                    DataType: LocalizedText
+                    ReferenceType: HasParameter
+                    ModellingRule: Optional
+                    Value: {"NamespaceIndex":30,"TextId":"StandBy"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 494.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 184.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: Label7
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                ModellingRule: Optional
+                Value: {"NamespaceIndex":30,"TextId":"Downtime(Min.)"}
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 339.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 126.0
+              - Name: TextHorizontalAlignment
+                Type: BaseVariableType
+                DataType: TextHorizontalAlignment
+                ModellingRule: Optional
+                Value: 1
+              - Name: WordWrap
+                Type: BaseDataVariableType
+                DataType: Boolean
+                ModellingRule: Optional
+                Value: true
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 18.0
+            - Name: Label8
+              Type: Label
+              Children:
+              - Name: Text
+                Type: BaseDataVariableType
+                DataType: LocalizedText
+                Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+                Children:
+                - Name: DynamicLink
+                  Type: DynamicLink
+                  DataType: NodePath
+                  Value: "/Objects/OEE_Solution_For_Demo/CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Downtime"
+              - Name: LeftMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 493.0
+              - Name: TopMargin
+                Type: BaseVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 126.0
+              - Name: FontWeight
+                Type: BaseDataVariableType
+                DataType: FontWeightEnum
+                ModellingRule: Optional
+                Value: 700
+              - Name: FontSize
+                Type: BaseDataVariableType
+                DataType: Size
+                ModellingRule: Optional
+                Value: 20.0
+              - Name: TextColor
+                Type: BaseDataVariableType
+                DataType: Color
+                ModellingRule: Optional
+                Value: "#295cf1"
+            - Name: TopMargin
+              Type: BaseVariableType
+              DataType: Size
+              ModellingRule: Optional
+              Value: 1.0
+        - Name: Label1
+          Type: Label
+          Children:
+          - Name: Text
+            Type: BaseDataVariableType
+            DataType: LocalizedText
+            ModellingRule: Optional
+            Value: {"NamespaceIndex":30,"TextId":"Machine Selection & Real Time Panel"}
+          - Name: Width
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 1010.0
+          - Name: Height
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 29.0
+          - Name: HorizontalAlignment
+            Type: BaseVariableType
+            DataType: HorizontalAlignment
+            ModellingRule: Optional
+            Value: 3
+          - Name: TextColor
+            Type: BaseDataVariableType
+            DataType: Color
+            ModellingRule: Optional
+            Value: "#ff0000"
+          - Name: FontSize
+            Type: BaseDataVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: 30.0
+          - Name: FontWeight
+            Type: BaseDataVariableType
+            DataType: FontWeightEnum
+            ModellingRule: Optional
+            Value: 700
+          - Name: FontFamily
+            Type: BaseDataVariableType
+            DataType: Font
+            ModellingRule: Optional
+            Value: ""
+          - Name: TopMargin
+            Type: BaseVariableType
+            DataType: Size
+            ModellingRule: Optional
+            Value: -286.0
+          - Name: TextHorizontalAlignment
+            Type: BaseVariableType
+            DataType: TextHorizontalAlignment
+            ModellingRule: Optional
+            Value: 1

@@ -1,0 +1,33 @@
+Name: PiChartPerformance
+Id: g=e1caea96b59bfed831c030d42ca57a99
+Type: FolderType
+Children:
+- Name: Actual Speed
+  Id: g=7e189dfb5fbcd411e6f7670c33d5ed97
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Actual_Speed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Standard Speed
+  Type: BaseDataVariableType
+  DataType: Int16
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../../CommDrivers/RAEtherNet_IPDriver1/RAEtherNet_IPStation1/Tags/Program&:MainProgram/Standard_Speed"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2

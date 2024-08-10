@@ -1,0 +1,432 @@
+Name: Webchart
+Type: FolderType
+Children:
+- Name: SubscreenTemplate2
+  Id: g=3010f63622302c2b7b8f77b4b98d8a7d
+  Supertype: SubscreenTemplate
+  ReferenceType: HasComponent
+  Children:
+  - Name: Main
+    Type: Rectangle
+  - Name: Background
+    Type: Rectangle
+  - Name: Panel1
+    Type: Panel
+    Children:
+    - Name: Width
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: Height
+      Type: BaseVariableType
+      DataType: Size
+      ModellingRule: Optional
+      Value: 300.0
+    - Name: WebBrowser
+      Type: WebBrowser
+      Children:
+      - Name: URL
+        Type: BaseDataVariableType
+        DataType: ResourceUri
+        Value: "ns=30;%PROJECTDIR%/eCharts/Test.html"
+      - Class: Reference
+        Target: ns=5;i=354
+        Direction: Forward
+      - Class: Reference
+        Target: ns=5;i=356
+        Direction: Forward
+      - Class: Reference
+        Target: ns=5;i=358
+        Direction: Forward
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1161.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 420.0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 18.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 70.0
+    - Name: eChartTestLogic
+      Type: NetLogic
+      Children:
+      - Class: Method
+        Name: RefreshRadarGraph
+    - Name: HorizontalAlignment
+      Type: BaseVariableType
+      DataType: HorizontalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: VerticalAlignment
+      Type: BaseVariableType
+      DataType: VerticalAlignment
+      ModellingRule: Optional
+      Value: 3
+    - Name: Label1
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/OEE_Solution_For_Demo/Model/KPIDashboard2/ActualProduction"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 300.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Label2
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/OEE_Solution_For_Demo/Model/KPIDashboard2/Performance"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 500.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Label3
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/OEE_Solution_For_Demo/Model/KPIDashboard2/Availability"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 700.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Label4
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/OEE_Solution_For_Demo/Model/KPIDashboard2/Quality"
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 900.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Label5
+      Type: Label
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "/Objects/OEE_Solution_For_Demo/Model/KPIDashboard2/OEE"
+      - Name: HorizontalAlignment
+        Type: BaseVariableType
+        DataType: HorizontalAlignment
+        ModellingRule: Optional
+        Value: 0
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1100.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 30.0
+      - Name: FontSize
+        Type: BaseDataVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 20.0
+    - Name: Button1
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"BACK"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 1110.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 504.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 56.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: {"IdType":0,"Id":0,"Namespace":-1}
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+              - Name: DynamicLink
+                Type: DynamicLink
+                DataType: NodePath
+                Value: "{MainArea}@NodeId"
+                Children:
+                - Name: Mode
+                  Type: BaseVariableType
+                  DataType: DynamicLinkMode
+                  ModellingRule: Optional
+                  Value: 2
+            - Name: ns=3;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "ChangePanel"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: NewPanel
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":5,"TextId":"ChangePanelNewPanelDescription"}
+                Value: "/Objects/OEE_Solution_For_Demo/UI/Screen/Dashboard/KPIDashboard"
+              - Name: AliasNode
+                Type: BaseDataVariableType
+                DataType: NodeId
+                Description: {"NamespaceIndex":5,"TextId":"ChangePanelAliasNodeDescription"}
+                ValueRank: ScalarOrOneDimension
+                Value: {"IdType":0,"Id":0,"Namespace":-1}
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0
+    - Name: Button2
+      Type: Button
+      Children:
+      - Name: Text
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ModellingRule: Optional
+        Value: {"LocaleId":"en-US","Text":"M0"}
+      - Name: LeftMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 710.0
+      - Name: TopMargin
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 504.0
+      - Name: Width
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 130.0
+      - Name: Height
+        Type: BaseVariableType
+        DataType: Size
+        ModellingRule: Optional
+        Value: 56.0
+      - Name: MouseClickEventHandler1
+        Type: EventHandler
+        Children:
+        - Name: ListenEventType
+          Type: PropertyType
+          DataType: NodeId
+          Value: "/Types/EventTypes/BaseEventType/MouseEvent/MouseClickEvent"
+        - Name: MethodsToCall
+          Type: BaseObjectType
+          Children:
+          - Name: MethodContainer1
+            Type: BaseObjectType
+            Children:
+            - Name: ns=3;ObjectPointer
+              Type: NodePointer
+              DataType: NodeId
+              Value: "/Objects/Commands/VariableCommands"
+              Children:
+              - Name: Kind
+                Type: PropertyType
+                DataType: NodeId
+                Value: "/Types/ObjectTypes/BaseObjectType"
+            - Name: ns=3;Method
+              Type: BaseDataVariableType
+              DataType: String
+              Value: "Toggle"
+            - Name: InputArguments
+              Type: BaseObjectType
+              Children:
+              - Name: VariableToModify
+                Type: BaseDataVariableType
+                DataType: VariablePointer
+                Description: {"NamespaceIndex":3,"TextId":"ToggleVariableToModifyDescription"}
+                Value: {"IdType":2,"Id":"e9736870b73c08349d3ac4e6077cdaae","Namespace":30}
+              - Name: ArrayIndex
+                Type: BaseDataVariableType
+                DataType: UInt32
+                Description: {"NamespaceIndex":3,"TextId":"ToggleArrayIndexDescription"}
+                ValueRank: ScalarOrOneDimension
+                Value: 0
+        - Name: EventArguments
+          Type: MouseClickEvent
+          Children:
+          - Name: EventId
+            Type: PropertyType
+            DataType: ByteString
+            Value: ""
+          - Name: EventType
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceNode
+            Type: PropertyType
+            DataType: NodeId
+            Value: {"IdType":0,"Id":0,"Namespace":-1}
+          - Name: SourceName
+            Type: PropertyType
+            DataType: String
+            Value: ""
+          - Name: Time
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: ReceiveTime
+            Type: PropertyType
+            DataType: UtcTime
+            Value: "1601-01-01T00:00:00.0000000"
+          - Name: Message
+            Type: PropertyType
+            DataType: LocalizedText
+            Value: {"NamespaceIndex":-1,"LocaleId":"","Text":""}
+          - Name: Severity
+            Type: PropertyType
+            DataType: UInt16
+            Value: 0

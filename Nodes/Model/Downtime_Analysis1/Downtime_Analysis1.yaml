@@ -1,0 +1,212 @@
+Name: Downtime Analysis1
+Id: g=3c5df3660f5d04eacd6af9a0dd3234cc
+Type: FolderType
+Children:
+- Name: Total Time
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 720
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../TimeDiffObject1/Diff"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Idel Time
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 100
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/IdelTime@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: OccupiedTime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/OccupiedTime@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Lunch
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/Lunch@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Planned Runtime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/PlannedRuntime@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Setup Time
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/SetupTime@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Actual Runtime
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/ActualRuntime@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |-
+      Conveyor belt
+      miss-alignment
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 20
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/ConveyorBelt@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |-
+      Drive overlaod
+      Issue
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 30
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/DriveOverload@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Labeling issue
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 40
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/LabellingIssue@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |-
+      Raw material
+      shortage
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 50
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/RawMaterial@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Paper zam
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 60
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/PaperZam@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Motor Zam
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 70
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/MotorZam@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: |-
+      Total Operational 
+      Time
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+  Children:
+  - Name: DynamicLink
+    Type: DynamicLink
+    DataType: NodePath
+    Value: "../../DownAnalysisData1/TotalOperationalTime@Value"
+    Children:
+    - Name: Mode
+      Type: BaseVariableType
+      DataType: DynamicLinkMode
+      Value: 2
+- Name: Time Diff
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

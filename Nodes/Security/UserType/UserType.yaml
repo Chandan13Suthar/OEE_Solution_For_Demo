@@ -1,0 +1,33 @@
+Name: UserType
+Id: g=68902f520978ec51fbf964b8fa50ebf8
+Type: FolderType
+Children:
+- Name: User_21CFR
+  Id: g=d5191ffbe9175e3b1acb3c35ac9c7641
+  Supertype: UserType
+  Children:
+  - Name: Change_Password_On_Next_Login
+    Id: g=e2a09defd09c9d26ea98b982d42b8bcb
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true
+  - Name: User_Blocked
+    Id: g=978a848b867741e32221fce18da013fc
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: false
+  - Name: Password_Creation_Date
+    Id: g=ccbbc7932804be596c31d4920e1010a8
+    Type: BaseDataVariableType
+    DataType: DateTime
+    Value: "2023-05-31T00:00:00.0000000"
+  - Name: Invalid_Login_Attempts
+    Id: g=3914f0542aeb22845a85757fc2081a93
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: User_Active
+    Id: g=61f53bf6f9bd3c250d44e39f186f2d79
+    Type: BaseDataVariableType
+    DataType: Boolean
+    Value: true

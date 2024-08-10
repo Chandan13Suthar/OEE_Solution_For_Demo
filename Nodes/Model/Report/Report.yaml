@@ -1,0 +1,22 @@
+Name: Report
+Type: FolderType
+Children:
+- File: PDFViewerZoomMode/PDFViewerZoomMode.yaml
+- Name: DetailedProductionReportPath
+  Id: g=4e10cd6fbf9d57ac8b45fb7b44d459c6
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "D:\\Jatin Bhai\\OEE Reports\\DetailedProductionReport.pdf"
+- Name: RepFromTimestamp
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: RepToTimestamp
+  Type: BaseDataVariableType
+  DataType: DateTime
+  Value: "1601-01-01T00:00:00.0000000"
+- Name: DowntimeAlarmReportPath
+  Id: g=0f2fcea75c8006ac7d7a6c0f057d5ea2
+  Type: BaseDataVariableType
+  DataType: String
+  Value: "D:\\Jatin Bhai\\OEE Reports\\DowntimeAlarmReport.pdf"
